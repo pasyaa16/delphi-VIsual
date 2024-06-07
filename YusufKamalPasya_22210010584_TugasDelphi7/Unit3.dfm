@@ -1,0 +1,132 @@
+object Form3: TForm3
+  Left = 362
+  Top = 191
+  Width = 756
+  Height = 599
+  Caption = 'KATEGORI'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 136
+    Top = 88
+    Width = 52
+    Height = 19
+    Caption = 'Nama :'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lbl2: TLabel
+    Left = 136
+    Top = 384
+    Width = 131
+    Height = 19
+    Caption = 'Masukkan Nama : '
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object e1: TEdit
+    Left = 136
+    Top = 112
+    Width = 201
+    Height = 21
+    TabOrder = 0
+    Text = 'e1'
+  end
+  object Button1: TButton
+    Left = 344
+    Top = 112
+    Width = 75
+    Height = 25
+    Caption = 'INSERT'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object btn2: TButton
+    Left = 448
+    Top = 112
+    Width = 75
+    Height = 25
+    Caption = 'UPDATE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btn2Click
+  end
+  object dbgrd1: TDBGrid
+    Left = 136
+    Top = 152
+    Width = 481
+    Height = 225
+    DataSource = DataModule4.ds1
+    TabOrder = 3
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    OnCellClick = dbgrd1CellClick
+  end
+  object edt2: TEdit
+    Left = 136
+    Top = 408
+    Width = 273
+    Height = 21
+    TabOrder = 4
+    Text = 'E1'
+  end
+  object btn4: TButton
+    Left = 416
+    Top = 408
+    Width = 201
+    Height = 25
+    Caption = 'CARI'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = btn4Click
+  end
+  object btn1: TButton
+    Left = 544
+    Top = 112
+    Width = 75
+    Height = 25
+    Caption = 'DELETE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = btn1Click
+  end
+end
